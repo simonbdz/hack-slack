@@ -42,6 +42,7 @@ loop do
 	if key == "t" then
 		tl.tweet 
 		system "clear"
+		print_logo
 		tl.refresh
 	end
 	if key == "r" then
