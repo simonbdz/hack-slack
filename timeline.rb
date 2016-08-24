@@ -23,7 +23,7 @@ $tlpath = File.absolute_path("hack-slack/db/timeline") #ruta del archivo relativ
   end
 
   def tweet #Coloca el tweet en la ultima linea del archivo
-    print "Introduzca mensaje".yellow
+    p "Introduzca mensaje: ".yellow
     tweet = gets.chomp
     puts
     File.open($tlpath, 'a') { |f|
@@ -38,7 +38,6 @@ $tlpath = File.absolute_path("hack-slack/db/timeline") #ruta del archivo relativ
               puts line.white
             end
         end
-      sleep 1
       puts
       puts "t.- Enviar mensaje al canal / s.- salir / r. refrescar ".green
   end

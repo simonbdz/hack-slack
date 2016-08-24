@@ -30,8 +30,9 @@ system "clear"
 print_logo
 
 #pedir usuario
-puts "Introduzca usuario del canal slack PROMO 6 {HACK}\n".yellow
+print "Introduzca usuario del canal slack PROMO 6 {HACK}: ".yellow
 $user = gets.chomp
+puts
 
 
 
