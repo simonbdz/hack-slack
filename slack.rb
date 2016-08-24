@@ -40,6 +40,7 @@ key = "r"
 loop do
 	if key == "t" then
 		tl.tweet 
+		system "clear"
 		tl.refresh
 	end
 	if key == "r" then
