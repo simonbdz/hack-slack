@@ -24,9 +24,12 @@ tl = Timeline.new
 
 #tl.flush
 
-#pedir usuario
 
+
+system "clear"
 print_logo
+
+#pedir usuario
 puts "Introduzca usuario del canal slack PROMO 6 {HACK}\n".yellow
 $user = gets.chomp
 
@@ -36,12 +39,18 @@ tl.tweet
 key = "r"
 loop do
 	if key == "t" then
-	tl.tweet 
-	tl.refresh
+		tl.tweet 
+		tl.refresh
 	end
-	tl.refresh if key == "r"
-	key = get_keypressed
-	exit if key == "s"
+	if key == "r" then
+		system "clear"
+		print_logo 
+		tl.refresh 
+	end
 	
+	key = get_keypressed
+	
+	exit if key == "s"
+
 end
  
