@@ -28,6 +28,7 @@ tl = Timeline.new
 
 system "clear"
 print_logo
+tl.refresh
 
 #pedir usuario
 print "Introduzca usuario del canal slack PROMO 6 {HACK}: ".yellow
