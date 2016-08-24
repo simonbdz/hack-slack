@@ -1,6 +1,6 @@
 class Timeline
 
-$tlpath = File.absolute_path("db/timeline") #ruta del archivo relativo
+$tlpath = File.absolute_path("hack-slack/db/timeline") #ruta del archivo relativo
   
   def print #funcion para imprimir archivo de texto plano timeline
     File.open($tlpath, 'r') do |f|
